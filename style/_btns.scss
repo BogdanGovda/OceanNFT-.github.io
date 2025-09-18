@@ -1,0 +1,93 @@
+.btn{
+   display: inline-block;
+        border-radius: 55px 5px 50px 5px;
+       height: 100%;
+       width: 100%;
+        box-shadow: 3px 9.421837px 107.2295455933px 5px rgba(255, 86, 246, .51);
+
+         &__explore{
+        display: none;
+        @include phone{
+            display: flex;
+
+        }
+        margin-top: 40px;
+        margin: 40px auto;
+        width: 133.31px;
+        height: 34.21px;
+        border: 4px solid transparent;
+        border-radius: 20px;
+        @include phone{
+            margin: 28px auto;
+        }
+        align-items: center;
+        justify-content: center;
+
+        color: rgba(255, 255, 255, 1);
+        font-family: Orbitron;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 100%;
+        img{
+            margin-left: 10px;
+            width: 27.72px;
+            height: 8.26px;
+            @include phone{
+                margin-right: 16px;
+                margin-left: 6px;
+            }
+        }
+    }
+    &__explore-wrapper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(92.23deg,  #FFA6FA 49%, #407ad5 100%);
+        clip-path: polygon(0% 28%, 17% 0%, 100% 0%, 100% 73%, 85% 100%, 0% 100%);
+    }
+    &__explore-content{
+        position: absolute;
+        top: 2px;
+        bottom: 2px;
+        left: 2px;
+        right: 2px;
+        width: 97%;
+        height: 91%;
+        background: rgba(32, 8, 59, 1);
+        clip-path: polygon(0% 28.5%, 17% 0%, 100% 0%, 100% 72.5%, 85% 100%, 0% 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include phone{
+            justify-content: end;
+
+        }
+    }
+    
+}
+.btn--reverse{
+    background: linear-gradient(92.23deg, #406AFF -17%, #3BACE2 0%, #B936EE 50%, #FF56F6 80%);
+}
+.btn__wrapper{
+    position: relative;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(92.23deg, #407ad5  24%, #FFA6FA 49%);
+}
+.btn__content{
+    position: absolute;
+        box-sizing: border-box;
+        left: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 2px;
+        right: 2px;
+        bottom: 2px;
+        
+        background: linear-gradient(130.28deg, rgba(255, 86.06249237060547, 245.50909423828125, 1) 18%,rgba(185.02975463867188, 53.550010681152344, 238, 1) 43%,rgba(59, 172, 226, 1) 85%,rgba(63.75, 105.82500457763672, 255, 1) 100%);
+        img{
+            margin-left: 10px;
+        }
+        
+}

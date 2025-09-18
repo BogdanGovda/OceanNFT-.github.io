@@ -1,0 +1,256 @@
+.users{
+    padding: 106px 110px 20px 109px;
+    @include phone{
+        padding: 59px 45px 20px 25px;
+    }
+    @include tablet{
+        padding: 106px 40px 20px 40px;
+    }
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        color: rgba(255, 255, 255, 1);
+        font-family: Orbitron;
+        font-size: 26.53px;
+        font-weight: 700;
+        line-height: 100%;
+        @include phone{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 100%;
+        }
+    }
+    &__more{
+        color: rgba(255, 255, 255, 1);
+        font-family: Orbitron;
+        font-size: 26.53px;
+        font-weight: 700;
+        line-height: 100%;
+        text-decoration: none;
+        @include phone{
+            display: none;
+        }
+        img{
+            width: 51.96px;
+            height: 26.53px;
+            margin-right: 5px;
+            margin-left: 10px;
+        }
+    }
+    &__cover{
+        position: absolute;
+       width: 100%;
+        top: 3px;
+        z-index: -1;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__avatar{
+        @include phone{
+            img{
+                width: 112.52px;
+                height: 112.52px;
+            }
+        }
+    }
+    &__list{
+        margin-top: 45px;
+        @include phone{
+            margin-top: 31px;
+        }
+        .swiper {
+            box-sizing: border-box;
+        }
+        .swiper-slide {
+            width: 437.76px;
+            @include phone{
+                width: 303.97px;
+            }
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+        }
+    }
+    &__wrapper{
+        @include phone{
+            width: 303.1px;
+            height: 391.13px;
+            padding-top: 74px;
+
+        }
+        width: 437.76px;
+        height: 564.89px;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 108px;
+         backdrop-filter: blur(79.20033264160156px);
+        background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.02) 100%);
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            padding: 2.88px;
+            background: linear-gradient(to right,rgba(255, 255, 255, 0.28),rgba(255, 255, 255, 0.1));
+            mask: linear-gradient(#fff 0 0) , linear-gradient(#fff 0 0) content-box ;
+            mask-composite: exclude;
+        }
+    }
+    &__item{
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+       
+        &:nth-child(3){
+            .users__name{
+                    margin-left: 3px;
+            }
+            .users__stat{
+                span{
+                    margin-left: 6px;
+                }
+            }
+            .users__stat:nth-child(3){
+                span{
+                    margin-left: 8px;
+                }
+            }
+        }
+        
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    &__name{
+        color: rgba(255, 255, 255, 1);
+        font-family: Rajdhani;
+        font-size: 24.32px;
+        font-weight: 500;
+        line-height: 46.08px;
+        margin-top: -1px;
+        @include phone{
+            font-size: 16.84px;
+            font-weight: 500;
+            line-height: 31.91px;
+        }
+    }
+    &__link{
+        color: rgba(255, 177, 238, 1);
+        font-family: Rajdhani;
+        font-size: 20.16px;
+        font-weight: 400;
+        line-height: 46.08px;
+        margin-top: -15px;
+        margin-left: 19px;
+        display: flex;
+        align-items: center;
+        @include phone{
+            font-size: 13.96px;
+            font-weight: 400;
+            line-height: 31.91px;
+            margin-top: -11px;
+            margin-left: 16px;
+        }
+        img{
+            width: 15.84px;
+            height: 17.28px;
+            margin-left: 4px;
+            @include phone{
+                width: 10.97px;
+                height: 11.96px;
+            }
+
+        }
+    }
+    &__stats{
+        display: flex;
+        color: rgba(255, 255, 255, 1);
+        font-family: Rajdhani;
+        font-size: 31.69px;
+        font-weight: 600;
+        line-height: 63.38px;
+        gap: 58px;
+        @include phone{
+            font-size: 21.94px;
+            font-weight: 600;
+            line-height: 43.88px;
+            gap: 40px;
+            margin-top: 5px;
+        }
+        span{
+            font-family: Rajdhani;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 63.38px;
+            @include phone{
+                font-size: 13.71px;
+                font-weight: 500;
+                line-height: 43.88px;
+            }
+        }
+    }
+    &__stat{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 9px;
+        width: 80.7px;
+        height: 95.07px;
+        @include phone{
+            width: 55.88px;
+            height: 65.83px;
+            margin-top: 0;
+        }
+        span{
+            text-align: start;
+            margin-top: -34px;
+            margin-left: 3px;
+            @include phone{
+                margin-top: -23px;
+            }
+        }
+        &:nth-child(3){
+            span{
+                margin-left: 5px;
+            }
+        }
+    }
+    &__btn{
+        margin-top: 19px;
+        margin-left: 6px;
+        width: 239.84px;
+        height: 53.85px;
+        @include phone{
+            margin-top: 14px;
+            width: 162.6px;
+            height: 35.21px;
+        }
+        .btn__content{
+            color: rgba(255, 255, 255, 1);
+            font-family: Rajdhani;
+            font-size: 19.9px;
+            font-weight: 600;
+            line-height: 100%;
+            @include phone{
+                font-size: 13.78px;
+                font-weight: 600;
+                line-height: 100%;
+            }
+        }
+    }
+    .btn__explore{
+        margin-top: 39px;
+        margin-right: 72px;
+
+    }
+   
+}

@@ -1,0 +1,137 @@
+.subscribe{
+    margin-top: 289px;
+    padding: 0 220px 155px 110px;
+    @include desktop{
+    padding: 0 20px 155px 20px; 
+    }
+    display: flex;
+    @include tablet{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    @include phone{
+        padding: 0 25px 105px 25px; 
+        margin-top: 169px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    &__img{
+        img{
+            object-fit: cover;
+        }
+        @include laptop{
+            img{
+                width: 326px;
+                height: 380px;
+            }
+        }
+        @include tablet{
+            margin-top: 120px;
+        }
+        @include phone{
+            margin-top: 108px;
+          
+        }
+    }
+    &__title{
+        color: rgba(255, 255, 255, 1);
+        font-family: Orbitron;
+        font-size: 39.8px;
+        font-weight: 700;
+        line-height: 100%;
+        @include phone{
+            font-size: 26.27px;
+            font-weight: 700;
+            line-height: 100%;
+        }
+    }
+    &__subtitle{
+        color: rgba(255, 255, 255, 1);
+        font-family: Inter;
+        font-size: 19.9px;
+        font-weight: 400;
+        line-height: 35.37px;
+        margin-top: 31px;
+        letter-spacing: 0.4px;
+        margin-left: 4px;
+        @include phone{
+            font-size: 13.14px;
+            font-weight: 400;
+            line-height: 23.35px;
+            margin-top: 20px;
+            letter-spacing: .1px;
+            margin-left: 0;
+        }
+    }
+    &__info{
+        margin-left: 73px;
+        box-sizing: border-box;
+        padding-top: 38px;
+        @include laptop{
+            width: 50%;
+        }
+        @include tablet{
+            width: 50%;
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include phone{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    &__form{
+        margin-top: 49px;
+        @include phone{
+            margin-top: 32px;
+        }
+        input{
+            width: 278.15px;
+            height: 55.06px;
+            border-radius: 5.53px 0px 0px 5.53px;
+            background: var(--Text / Gray 100, rgba(244, 245, 247, 1)); 
+            display: flex;
+            justify-content: center;
+            padding-left: 19px;
+            box-sizing: border-box;
+            font-family: Inter;
+            font-size: 15.48px;
+            font-weight: 400;
+            letter-spacing: 0.1px;
+            line-height: 26.53px;
+            @include phone{
+                width: 180.97px;
+                height: 35.03px;
+                font-size: 10.22px;
+                font-weight: 400;
+                line-height: 17.51px;
+                padding-left: 10px;
+            }
+        }
+        display: flex;
+    }
+    &__btn{
+        color: rgba(255, 255, 255, 1);
+        font-family: Inter;
+        font-size: 15.48px;
+        font-weight: 500;
+        line-height: 22.11px;
+        width: 147.71px;
+        height: 54.06px;
+        margin-left: 5px;
+        border-radius: 0px 5.53px 5.53px 0px;
+        @include phone{
+            width: 94.86px;
+            height: 35.11px;
+            margin-left: 7px;
+        }
+        .btn__wrapper{
+            border-radius: 0px 5.53px 5.53px 0px;
+        }
+        .btn__content{
+            border-radius: 0px 5.53px 5.53px 0px;
+        }
+    }
+}

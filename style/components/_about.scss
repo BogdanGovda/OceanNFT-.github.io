@@ -1,0 +1,547 @@
+.about{
+    position: relative;
+    max-width: 1452px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 85px 110px 110px 103px;
+    @include laptop{
+        padding: 85px 50px 110px 53px;
+        
+    }
+    @include phone{
+        padding: 24px 30px 30px 30px;
+        
+    }
+    &__text{
+        color: rgba(255, 255, 255, 1);
+        position: relative;
+        max-width: 848px;
+        order: 1;
+    }
+    &__title{
+
+        font-family: Spartan;
+        font-size: 66.33px;
+        font-weight: 600;
+        line-height: 134.4%;
+        @include phone{
+            font-family: Lato;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 138.4%;
+        }
+
+    }
+    &__title--gradient{
+        background: linear-gradient(92.23deg, #FF56F6 0%,  #42A6E3 100%);
+        background-clip: text;
+        color: transparent;
+        margin-left: -3px;
+    }
+    &__subtitle{
+        margin-top: 20px;
+        max-width: 658px;
+        font-family: Rajdhani;
+        font-size: 26.53px;
+        font-weight: 400;
+        line-height: 44.22px;
+        @include phone{
+            margin-top: 27px;
+            font-family: Rajdhani;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 23.22px;
+        }
+    }
+    &__btn{
+        margin-top: 44px;
+       display: flex;
+       align-items:center;
+       @include phone{
+        margin-top: 34px;
+       }
+    }
+    &__explore{
+        display: inline-block;
+        border-radius: 55px 5px 50px 5px;
+        width: 249.83px;
+        height: 64.12px;
+        box-shadow: 3px 9.421837px 107.2295455933px 5px rgba(255, 86, 246, .51);
+        @include phone{
+            width: 129px;
+            height: 32px;
+        }
+    }
+    &__explore-wrapper{
+        position: relative;
+        width: 251px;
+        height: 69px;
+        border-radius: 25px 5px 25px 5px;
+        background: linear-gradient(92.23deg,  #FFA6FA 49%, #407ad5 100%);
+        clip-path: polygon(0% 28%, 17% 0%, 100% 0%, 100% 73%, 85% 100%, 0% 100%);
+        @include phone{
+            width: 133px;
+            height: 34px;
+            border-radius: 0;
+        }
+        
+    }
+    &__explore-content{
+        position: absolute;
+        box-sizing: border-box;
+        left: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 31px;
+        top: 2px;
+        width: 245px;
+        height: 65px;
+        @include phone{
+            width: 129px;
+            height: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 100%;
+            border-radius: 0;
+            padding-right: 14px;
+        }
+        border-radius: 25px 5px 25px 5px;
+        background: linear-gradient(92.23deg, #406AFF -17%, #3BACE2 0%, #B936EE 50%, #FF56F6 80%);
+        clip-path: polygon(0% 28.5%, 17% 0%, 100% 0%, 100% 72.5%, 85% 100%, 0% 100%);
+
+        color: rgba(255, 255, 255, 1);
+        font-family: Orbitron;
+        font-size: 19.9px;
+        font-weight: 700;
+        line-height: 100%;
+        img{
+            margin-left: 10px;
+            @include phone{
+                width: 27.72px;
+                height: 8.26px;
+            }
+        }
+    }
+    &__create{
+        margin-left: 37px;
+        background: linear-gradient(86.53deg, #42A6E3 0% ,#FF56F6 100%);;
+        background-clip: text;
+        color: transparent;
+        font-family: Orbitron;
+        font-size: 19.9px;
+        font-weight: 700;
+        line-height: 100%;
+        @include phone{
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 100%;
+            margin-left: 25px;
+        }
+    }
+    .stats{
+        margin-top: 68px;
+        display: flex;
+        gap: 17px;
+        @include phone{
+            gap: 66px;
+            margin-top: 42px;
+        }
+        &__value{
+            font-family: Aldrich;
+            font-size: 39.8px;
+            font-weight: 400;
+            line-height: 53.06px;
+            letter-spacing: 0.22px;
+            @include phone{
+                font-family: Aldrich;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28.31px;
+                letter-spacing: 0.12px;
+                
+            }
+        }
+        &__text{
+            font-family: Alethia Next;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            @include phone{
+                font-family: Lato;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 11.8px;
+                letter-spacing: 0.12px;
+                margin-top: 5px;
+            }
+        }
+        &__line{
+            border: 1.11px solid rgba(255, 255, 255, 0.26);
+            height: 63px;
+          
+            margin-right: 22px;
+            margin-top: 8px;
+            @include phone{
+                display: none;
+            }
+        }
+        &__item:last-child{
+            margin-left: 9px;
+            @include phone{
+                margin-left: 0;
+            }
+        }
+       
+    }
+    
+    &__nft{
+        position: relative;
+        width: 402px;
+        height: 477px;
+        max-width: 600px;
+        margin-right: -65px;
+        @include desktop-mini{
+            margin-right: -19px;
+        }
+        @include laptop{
+            order: 3;
+            margin-right: 80px;
+            margin-top: 60px;
+
+        }
+        @include tablet{
+            margin-top: 60px;
+            
+        }
+        @include phone{
+            orphans: 3;
+            margin-right: 0;
+            height: 525px;
+            margin-top: 98px;
+            // overflow: hidden;
+            .about__nft-img{
+                        width: 325px;
+                        position: relative;
+                        overflow: hidden;
+                        left: -5px;
+            }
+        }
+       
+        margin-top: 15px;
+        order: 2;
+        .card{
+            @include laptop{
+                position: relative;
+                right: 0;
+                top: -150px;
+                width: 100%;
+
+            }
+            @include tablet{
+                position: relative;
+                right: 0;
+                top: -150px;
+                width: 100%;
+            }
+            @include phone{
+                position: relative;
+                right: 0;
+                top: -148px;
+                width: 100%;
+                left: -3px;
+            }
+                clip-path: polygon(0% 25.5%, 14% 0%, 100% 0%, 100% 72.5%, 100% 100%, 0% 100%);
+            &__wrapper{
+                clip-path: polygon(0% 25.5%, 14% 0%, 100% 0%, 100% 72.5%, 100% 100%, 0% 100%);
+                padding-top: 25px;
+                @include laptop{
+                    width: 99%;
+                }
+                @include tablet{
+                    width: 99%;
+                }
+                @include phone{
+                    padding-left: 18px;
+                    padding-top: 28px;
+                }
+            }
+            &__price-value{
+                bottom: 11px;
+                left: -2px;
+                @include phone{
+                    left: -4px;
+                }
+            }
+        }
+    }
+    &__partners{
+        margin-top: 121px;
+        padding-left: 7px;
+        height: 53px;
+        width: 100%;
+        order: 3;
+        display: flex;
+        align-items: center;
+        gap: 133px;
+        @include desktop-mini{
+            gap: 100px;
+        }
+        @include laptop{
+            flex-wrap: wrap;
+            gap: 50px;
+            order: 2;
+
+        }
+        @include tablet{
+            order: 2;
+            gap: 55px;
+            height: 170px;
+        }
+        @include phone{
+            margin-top: 35px;
+            padding-left: 0;
+            margin-left: 0;
+            order: 2;
+            gap: 0px;
+            // height: 170px;
+            img{
+            &:nth-child(1){
+                width: 143px;
+                height: 28px;
+                @include phone{
+                    margin-right: 58px;
+                }
+            }
+            &:nth-child(2){
+                width: 91px;
+                height: 28px;
+            }
+            &:nth-child(3){
+                width: 188px;
+                height: 28px;
+                @include phone{
+                    margin-left: -8px;
+
+                }
+            }
+            &:nth-child(4){
+                width: 105px;
+                height: 16px;
+            }
+        }
+        }
+        img{
+            &:nth-child(2){
+                margin-top: 10px;
+            }
+            &:nth-child(3){
+                margin-top: 10px;
+                @include phone{
+                    margin-top: 27px;
+
+                }
+            }
+            &:nth-child(4){
+                margin-top: 25px;
+                @include phone{
+                        margin-top: 29px;
+                        margin-left: 25px;
+                }
+            }
+        }
+    }
+    &__light{
+        position: absolute;
+        width: 153.66px;
+        height: 153.66px;
+        background: rgba(255, 177, 238, 1);
+        opacity: 0.4;
+        filter: blur(76px);
+        border-radius: 50%;
+        left: 670px;
+        top: 322px;
+        @include tablet{
+            display: none;
+        }
+        @include phone{
+            display: none;
+        }
+        
+    }
+    &__light--purple{
+        position: absolute;
+        width: 271.94px;
+        height: 271.94px;
+        background: rgba(255, 0, 200, 1);
+        border-radius: 50%;
+        opacity: 0.4;
+        filter: blur(110px);
+        top: 446px;
+        left: -5px;
+        @include tablet {
+            top: 946px;
+        }
+        @include phone{
+            margin-top: 380px;
+        }
+
+    }
+}
+.card{      
+           
+            position: absolute;
+            bottom: -62px;
+            right: -90px;
+            width: 336.06px;
+            height: 181.3px;
+            box-sizing: border-box;
+            border-radius: 25px 10px 10px 10px;
+            border-radius: 10px;
+            backdrop-filter: blur(60.800254821777344px);
+            background: linear-gradient(90.00deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.2) 100%);
+            &__wrapper{
+                box-sizing: border-box;
+                margin-top: 2px;
+                margin-left: 2px;
+                width: 330px;
+                height: 175px;
+                backdrop-filter: blur(184.6116943359px);
+                background: rgba(32, 8, 59, .85);
+                box-sizing: border-box;
+                border-radius: 8.84px;
+                backdrop-filter: blur(60.800254821777344px);
+                
+                background: linear-gradient(90.00deg, rgba(32, 8, 59, .55),rgba(32, 8, 59, .55) 100%);
+                position: relative;
+                
+                top: 2px;
+                display: flex;
+                gap: 55px;
+                padding-left: 21px;
+                padding-top: 27px;
+                padding-bottom: 14px;
+                padding-right: 5px;
+                color: rgba(255, 255, 255, 1);
+                @include phone{
+                        padding-left: 16px;
+                        gap: 48px
+                }
+
+            }
+            &__title{
+                font-family: Rajdhani;
+                font-size: 17.69px;
+                font-weight: 700;
+                line-height: 35.37px;
+                @include phone{
+                line-height: 34.37px;
+                    
+                }
+              
+            }
+            &__author{
+                display: flex;
+                align-items: center;
+                gap: 3px;
+            }
+
+            &__price-title{
+                font-family: Rajdhani;
+                font-size: 11.05px;
+                font-weight: 600;
+                line-height: 35.37px;
+                margin-top: 6px;
+                @include phone{
+                    line-height: 32.37px;
+                }
+            }
+            &__price-value{
+                display: flex;
+                align-items: center;
+                font-family: Orbitron;
+                font-size: 9.72px;
+                font-weight: 700;
+                line-height: 100%;
+                position: relative;
+                bottom: 10px;
+                left: -4px;
+                span{
+                    margin-left: 7px;
+                    opacity: 0.7;
+                    font-family: Rajdhani;
+                    font-size: 11.05px;
+                    font-weight: 400;
+                    line-height: 35.37px;
+                }
+            }
+            &__actions{
+                margin-top: -3px;
+            }
+            &__actions-title{
+                font-family: Rajdhani;
+                font-size: 11.05px;
+                font-weight: 600;
+                line-height: 35.37px;
+                opacity: 0.7;
+              
+            }
+            &__name{
+                font-family: Rajdhani;
+                font-size: 15.48px;
+                font-weight: 600;
+                line-height: 34px;
+            }
+            &__timer{
+                display: flex;
+                gap: 17px;
+                position: relative;
+                top: -3px;
+                left: -2px;
+                @include phone{
+                    top: -4px;
+                }
+            }
+            &__time{
+                display: flex;
+                flex-direction: column;
+                span{
+                    position: relative;
+                    top: -8px;
+                    font-family: Rajdhani;
+                    font-size: 11.05px;
+                    font-weight: 500;
+                    line-height: 35.37px;
+                    opacity: 0.7;
+
+                }
+            }
+            &__btn{
+                    width: 122.39px;
+                    height: 39.59px;
+                    margin-top: 7px;
+                        margin-left: -10px;
+                        @include phone{
+                            margin-top: 3px;
+                        }
+                    .btn__wrapper{
+                            border-radius: 5px;
+                    }
+                    .btn__content{
+                            border-radius: 5px;
+                    }
+                a{
+                    color: rgba(255, 255, 255, 1);
+                    font-family: Rajdhani;
+                    font-size: 17.69px;
+                    font-weight: 600;
+                    line-height: 100%;
+                border-radius: 2.21px;
+
+                }
+            }
+        }

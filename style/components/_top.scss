@@ -1,0 +1,345 @@
+.top{
+    padding: 113px 110px 0 110px;
+    
+    @include laptop{
+        padding: 113px 80px 0 80px;   
+    }
+    @include tablet{
+        padding: 113px 40px 0 40px;
+    }
+    @include phone{
+        padding: 69px 25px 0 25px;
+        
+    }
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        color: rgba(255, 255, 255, 1);
+        font-family: Orbitron;
+        font-size: 26.53px;
+        font-weight: 700;
+        line-height: 100%;
+        @include phone{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 100%;
+        }
+    }
+    &__more{
+        color: rgba(255, 255, 255, 1);
+        font-family: Orbitron;
+        font-size: 26.53px;
+        font-weight: 700;
+        line-height: 100%;
+        text-decoration: none;
+        display: flex;
+        gap: 17px;
+        margin-right: 6px;
+        @include phone{
+            display: none;
+        }
+    }
+    &__list{
+        margin-top: 50px;
+        @include phone{
+            margin-top: 38px;
+        }
+        .swiper {
+            box-sizing: border-box;
+        }
+        .swiper-slide {
+            width: 437.76px;
+            @include phone{
+                width: 303.97px;
+                left: -11px;
+
+            }
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+        }
+       
+    }
+    &__item{
+        width: 437.76px;
+        @include phone{
+        }
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &:nth-child(1){
+            .card__wrapper{
+                gap: 34px;
+                @include phone{
+                    gap: 43px;
+                }
+            }
+        }
+        &:nth-child(2){
+            .card__wrapper{
+                gap: 44px;
+            }
+        }
+        &:nth-child(3){
+           .card__wrapper{
+                gap: 76px;
+                @include laptop{
+                    gap: 50px;
+                }
+            } 
+        }
+    }
+    &__item-img{
+        @include phone{
+            width: 303.97px;
+            img{
+                width: 303.97px;
+            }
+        }
+    }
+    &__card{
+        box-sizing: border-box;
+        top: 0;
+        width: 437.76px;
+        @include phone{
+            width: 303.97px;
+        }
+        .card{
+            position: relative;
+            height: 236.16px;
+            width: 100%;
+            top: -4px;
+            left: 0px;
+            @include phone{
+                height: 163.98px;
+            }
+            border-radius: 0;
+         
+            &__wrapper{
+                height: 98%;
+                width: 99%;
+                border-radius: 0;
+                padding-left: 30px;
+                padding-top: 36px;
+                gap: 33px;
+                @include phone{
+                    
+                    width: 99%;
+                    padding-top: 22px;
+                    align-items: center;
+                    justify-content: center;
+                    padding-left: 2px;
+                }
+            }
+            &__title{
+                font-family: Rajdhani;
+                font-size: 23.04px;
+                font-weight: 700;
+                line-height: 46.08px;
+                @include phone{
+                    font-family: Rajdhani;
+                    font-size: 13.6px;
+                    font-weight: 700;
+                    line-height: 27.2px;
+                }
+            }
+            &__author{
+                gap: 0;
+                @include phone{
+                        margin-top: 5px;
+                }
+            }
+            &__avatar{
+                img{
+                    @include phone{
+                        width: 26px;
+                        height: 26px;
+                    }
+                }
+            }
+            &__name{
+                font-family: Rajdhani;
+                font-size: 20.16px;
+                font-weight: 600;
+                line-height: 40px;
+                margin-top: -2px;
+                margin-left: 3px;
+                @include phone{
+                    font-family: Rajdhani;
+                    font-size: 11.9px;
+                    font-weight: 600;
+                    line-height: 27.2px;
+                }
+            }
+            &__verification{
+                img{
+                    width: 15.84px;
+                    height: 17.28px;
+                    margin-left: 3px;
+                    @include phone{
+                        width: 11px;
+                        height: 12px;
+                        margin-left: 13px;
+                    }
+                }
+            }
+            &__timer{
+                gap: 25px;
+                @include phone{
+                    top: 4px;
+                    gap: 20px;
+                    left: 0;
+
+                }
+            }
+            &__time{
+                font-family: Rajdhani;
+                font-size: 23.04px;
+                font-weight: 600;
+                line-height: 46.08px;
+                margin-top: -12px;
+                @include phone{
+                    font-family: Rajdhani;
+                    font-size: 13.6px;
+                    font-weight: 600;
+                    line-height: 27.2px;
+                    margin-top: -8px;
+                }
+                span{
+                    top: -22px;
+                    font-family: Rajdhani;
+                    font-size: 14.4px;
+                    font-weight: 500;
+                    line-height: 46.08px;
+                    @include phone{
+                        top: -12px;
+                        font-family: Rajdhani;
+                        font-size: 8.5px;
+                        font-weight: 500;
+                        line-height: 27.2px;
+                    }
+                }
+                &:nth-child(2){
+                    margin-left: -1px;
+                }
+                &:nth-child(3){
+                    margin-left: 4px;
+                }
+            }
+            &__price-title{
+                font-family: Rajdhani;
+                font-size: 14.4px;
+                font-weight: 600;
+                line-height: 46.08px;
+                margin-top: 11px;
+                margin-left: -1px;
+                opacity: 0.7;
+                @include phone{
+                    font-family: Rajdhani;
+                    font-size: 8.5px;
+                    font-weight: 600;
+                    line-height: 27.2px;
+                }
+
+            }
+            &__price-value{
+                font-family: Orbitron;
+                font-size: 12.66px;
+                font-weight: 700;
+                line-height: 100%;
+                gap: 3px;
+                bottom: 14px;
+                left: -6px;
+                @include phone{
+                    font-family: Orbitron;
+                    font-size: 7.47px;
+                    font-weight: 700;
+                    line-height: 100%;
+                    left: -5px;
+                    bottom: 9px;
+                }
+                img{
+                    width: 25.32px;
+                    height: 25.32px;
+                    @include phone{
+                        width: 17.58px;
+                        height: 17.58px;
+                    }
+                }
+                span{
+                    font-family: Rajdhani;
+                    font-size: 14.4px;
+                    font-weight: 400;
+                    line-height: 46.08px;
+                    margin-left: 4px;
+                    @include phone{
+                        font-family: Rajdhani;
+                        font-size: 8.5px;
+                        font-weight: 400;
+                        line-height: 27.2px;
+                    }
+                }
+            }
+            &__btn{
+                width: 159.52px;
+                height: 51.96px;
+                margin-top: -3px;
+                margin-left: -11px;
+                @include phone{
+                    width: 107.99px;
+                    height: 34px
+                }
+            }
+            .btn{
+                @include phone{
+                        position: relative;
+                        bottom: -16px;
+                        right: -5px;
+                }
+                &__wrapper{
+                    border-radius: 0;
+                }
+                &__content{
+                    border-radius: 0;
+                    font-family: Rajdhani;
+                    font-size: 23.04px;
+                    font-weight: 600;
+                    line-height: 100%;
+                    @include phone{
+                        font-size: 13.6px;
+                        font-weight: 600;
+                    }
+                    img{
+                        width: 31.68px;
+                        height: 12.01px;
+                        margin-left: 16px;
+                        @include phone{
+                            width: 22px;
+                            height: 8.34px;
+                        }
+                    }
+                }
+            }
+            &__actions{
+                margin-top: -3px;
+            }
+            &__actions-title{
+                font-family: Rajdhani;
+                font-size: 14.4px;
+                font-weight: 600;
+                line-height: 46.08px;
+                @include phone{
+                    font-family: Rajdhani;
+                    font-size: 8.5px;
+                    font-weight: 600;
+                    line-height: 27.2px;
+                }
+            }
+        }
+    }
+   
+}
+

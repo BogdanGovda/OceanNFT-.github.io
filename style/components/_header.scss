@@ -1,0 +1,144 @@
+.header{
+    padding: 48px 113px 30px 114px;
+    &__close{
+        display: none;
+    }
+    @include laptop{
+        gap: 100px;
+    }
+    @include phone{
+        gap: 80px;
+        padding: 27px 30px 30px 25px;
+    }
+    box-sizing: border-box;
+    display: flex; 
+    align-items: center;
+    gap: 225px;
+    &__menu{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+    &__menu-list{
+        @include tablet{
+            display: none;
+        }
+        @include phone{
+            display: none;
+        }
+        display: flex;
+        align-items: center;
+        gap: 66px; 
+        margin: 0;
+        padding: 0;
+        &:nth-child(2){
+            gap: 40px;
+        }
+    }
+    &__menu-item{
+            margin-top: 0;
+            list-style: none;
+            a{
+                color: rgba(255, 255, 255, 0.6);
+                font-family: Orbitron;
+                font-size: 19.9px;
+                font-weight: 700;
+                line-height: 100%;
+                &:hover{
+                    color: #fff;
+                }
+            }
+
+    }
+    a{
+        text-decoration: none;
+    }
+    &__burger{
+        display: none;
+        cursor: pointer;
+        @include tablet{
+            display: block;
+        }
+        @include phone{
+            display: block;
+        }
+    }
+}
+.active{
+    flex-direction: column;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(32, 8, 59, 1);
+    .header__menu{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .header__menu-list{
+        display: block;
+    }
+    .header__menu-item{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .header__burger{
+        display: none;
+    }
+    .header__close{
+        display: block;
+    }
+}
+.logo{
+    &__img{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 16.58px;
+            height: 26.81px;
+            @include phone{
+                width: 13.44px;
+                height: 22.47px;
+            }
+        }
+    }
+    
+}
+.logo-gray, .logo-white{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.8983px;
+    line-height: 25px;
+    @include phone{
+        font-size: 16.13px;
+        font-weight: 700;
+        line-height: 100%;
+    }
+}
+.logo-gray{
+    color: rgba(255, 255, 255, 0.6);
+}
+.logo-white{
+    color: #fff;
+}
+.overlay{
+    z-index: 1;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(60px);
+    background: rgba(128, 128, 128, 0.5);
+    top: 480px;
+}
+.overlay-active{
+    display: block;
+}
+.lock {
+  overflow: hidden;
+}
