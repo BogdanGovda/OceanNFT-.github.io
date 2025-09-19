@@ -32,6 +32,10 @@ const swiper = new Swiper('.swiper', {
     //     delay: 3000,
     // },
     breakpoints: {
+        330: {
+            slidesPerView: 1,
+            spaceBetween: 45,
+        },
         375: {
             slidesPerView: 1,
             spaceBetween: 25,

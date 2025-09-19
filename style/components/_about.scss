@@ -209,13 +209,14 @@
             margin-right: -19px;
         }
         @include laptop{
-            order: 3;
             margin-right: 80px;
             margin-top: 60px;
+            order: 2;
 
         }
         @include tablet{
             margin-top: 60px;
+            order: 3;
             
         }
         @include phone{
@@ -291,10 +292,11 @@
         @include desktop-mini{
             gap: 100px;
         }
+       
         @include laptop{
             flex-wrap: wrap;
             gap: 50px;
-            order: 2;
+            order: 3;
 
         }
         @include tablet{

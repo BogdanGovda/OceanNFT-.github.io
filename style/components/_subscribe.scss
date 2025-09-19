@@ -35,6 +35,7 @@
     }
     &__title{
         color: rgba(255, 255, 255, 1);
+        font-feature-settings: 'salt' on, 'liga' off;
         font-family: Orbitron;
         font-size: 39.8px;
         font-weight: 700;
@@ -52,14 +53,15 @@
         font-weight: 400;
         line-height: 35.37px;
         margin-top: 31px;
-        letter-spacing: 0.4px;
+        // letter-spacing: 0.3px;
         margin-left: 4px;
+        font-feature-settings: "salt" on, "liga" off;
         @include phone{
             font-size: 13.14px;
             font-weight: 400;
             line-height: 23.35px;
             margin-top: 20px;
-            letter-spacing: .1px;
+            letter-spacing: 0px;
             margin-left: 0;
         }
     }
@@ -126,12 +128,18 @@
             width: 94.86px;
             height: 35.11px;
             margin-left: 7px;
+            font-size: 10.22px;
+            font-weight: 500;
+            line-height: 14.59px;
         }
         .btn__wrapper{
             border-radius: 0px 5.53px 5.53px 0px;
         }
         .btn__content{
             border-radius: 0px 5.53px 5.53px 0px;
+            @include phone{
+            left: 0;
+            }
         }
     }
 }

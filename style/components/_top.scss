@@ -324,6 +324,9 @@
                 }
             }
             &__actions{
+                @include phone{
+                    margin-top: -23px;
+                }
                 margin-top: -3px;
             }
             &__actions-title{

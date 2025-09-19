@@ -19,21 +19,30 @@
   }
 }
 @mixin phone {
-  @media (max-width: 767px) and (min-width: 375px) {
+  @media (max-width: 767px) and (min-width: 330px) {
     @content;
   }
 }
 
 @font-face {
     font-family: 'Inter';
-    src: local('Inter');
+    src: url('../components/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
 }
 @font-face {
     font-family: 'Inter-Bold';
-    src: local('Inter');
+    src: url('../components/fonts/Inter/Inter-ExtraBold.ttf');
 }
 @font-face {
   font-family: 'Lato';
   // src: local('Lato');
   src: url('../components/fonts/Lato/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../components/fonts/Orbition/Orbitron-VariableFont_wght.ttf');
+}
+@mixin big{
+     @media (min-width: 2300px) {
+        @content;
+    }
 }

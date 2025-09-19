@@ -15,6 +15,10 @@ body{
     padding: 0;
     backdrop-filter: blur(184.6116943359375px);
     background: rgba(32, 8, 59, 0.75);
+    @include big{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 }
 .container{
     padding: 0 110px;
