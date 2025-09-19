@@ -209,19 +209,18 @@
             margin-right: -19px;
         }
         @include laptop{
-            margin-right: 80px;
+            margin: 0 auto;
             margin-top: 60px;
             order: 2;
 
         }
         @include tablet{
             margin-top: 60px;
-            order: 3;
+            order: 2;
             
         }
         @include phone{
             orphans: 3;
-            margin-right: 0;
             height: 525px;
             margin-top: 98px;
             // overflow: hidden;
@@ -253,7 +252,7 @@
                 position: relative;
                 right: 0;
                 top: -148px;
-                width: 100%;
+                        width: 325px;
                 left: -3px;
             }
                 clip-path: polygon(0% 25.5%, 14% 0%, 100% 0%, 100% 72.5%, 100% 100%, 0% 100%);
@@ -300,7 +299,7 @@
 
         }
         @include tablet{
-            order: 2;
+            order: 3;
             gap: 55px;
             height: 170px;
         }
@@ -309,19 +308,22 @@
             padding-left: 0;
             margin-left: 0;
             order: 2;
-            gap: 0px;
+            gap: 5px;
             // height: 170px;
             img{
             &:nth-child(1){
                 width: 143px;
                 height: 28px;
                 @include phone{
-                    margin-right: 58px;
+                    margin-right: 40px;
                 }
             }
             &:nth-child(2){
                 width: 91px;
                 height: 28px;
+                @include phone{
+                    margin-right: 40px;
+                }
             }
             &:nth-child(3){
                 width: 188px;
@@ -342,16 +344,16 @@
                 margin-top: 10px;
             }
             &:nth-child(3){
-                margin-top: 10px;
+                // margin-top: 10px;
                 @include phone{
-                    margin-top: 27px;
+                    // margin-top: 27px;
 
                 }
             }
             &:nth-child(4){
-                margin-top: 25px;
+                // margin-top: 25px;
                 @include phone{
-                        margin-top: 29px;
+                        // margin-top: 29px;
                         margin-left: 25px;
                 }
             }
